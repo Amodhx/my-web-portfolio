@@ -3,26 +3,132 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/fontawesome-free-6.5.1-web/css/all.min.css">
+    <style>
+        body{
+            background-color:   blueviolet;
+        }
+        header{
+            position: fixed;
+            background-image: linear-gradient(dimgray,darkgray);
+            width: 100%;
+            height: 40px;
+            border-radius: 0px 0px 10px 10px;
+            box-sizing: border-box;
+            z-index: 1000;
+        }
+        header>nav{
+            position: relative;
+            width: fit-content;
+            left: 60vw;
+            top: 10px;
+            font-size: 16px;
+            font-family: "Candara Light";
+        }
+        header>nav>ul{
+            margin: 0;
+        }
+        header>nav>ul>li{
+            display: inline-block;
+            color: white;
+        }
+        header>nav>ul>li>a{
+            color: white;
+            margin: 10px;
+            padding-top: 7px;
+            text-decoration: none;
+        }
+        header>nav>ul>li>a:hover{
+            border-top: 5px solid black;
+        }
+        #logoSec{
+            position: absolute;
+            right: 2vw;
+            top: 8vh;
+        }
+        #homeLeft{
+            position: absolute;
+            top: 207px;
+            left: 90px;
+        }
+        #homeLeft>h1{
+            font-weight: bolder;
+            font-family: ui-monospace;
+            font-size: 72px;
+            letter-spacing: 5px;
+            color: white;
+        }
+        #homeLeft>h3{
+            position: absolute;
+            font-family: ui-monospace;
+            font-size: 30px;
+            letter-spacing: 2px;
+            color: darkgray;
+        }
+        #homeRight{
+            position: absolute;
+            top: 108px;
+            right: 155px;
+        }
+        #homeRight>img{
+            border-radius: 100%;
+            width: 511px;
+            height: 511px;
+        }
+        #homeRight>h3{
+            font-family: monospace;
+            font-size: 40px;
+            position: absolute;
+            right: 47px;
+            margin: auto;
+            bottom: -64px;
+            color: white;
+            letter-spacing: 2px;
+        }
+        #blog{
+            position: absolute;
+            top: 100vh;
+            width: 100%;
+            height: 100vh;
+            background-color: red;
+        }
+        #blog>div{
+            position: absolute;
+            width: 90vw;
+            height: 90vh;
+            background-color: white;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            margin: auto;
+            border-radius: 25px;
+        }
+    </style>
 </head>
 <body>
-
 <!--page header-->
 <header>
-    <a href="">Home</a>
-    <a href="">Blog</a>
-    <a href="">Education</a>
-    <a href="">Projects</a>
-    <a href="">Assignments</a>
-    <a href="">Find me:</a>
+    <nav>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Education</a></li>
+            <li><a href="">Projects</a></li>
+            <li><a href="">Assignments</a></li>
+            <li><a href="">Fine me:</a></li>
+        </ul>
+    </nav>
 </header>
 
 <!--logo section-->
-<section>
-    <img src="icons/badge.png" title="logo" alt="logo" width="100">
+<section id="logoSec">
+    <img src="icons/Speed_Dial_-_Opera_2_1_2024_9_46_50_PM-removebg-preview%202%20(1).png" title="logo" alt="logo" width="120">
 </section>
 
 <!--home page left section-->
-<section>
+<section id="homeLeft">
     <h1>I`m a Software <br> Developer</h1>
 
     <h3>Follow for Updates</h3><br>
@@ -32,14 +138,15 @@
 </section>
 
 <!--home page right section-->
-<section>
-    <img src="images/mainImage.jpg" title="personalImage" alt="Admin Image" width="280">
+<section id="homeRight">
+    <img src="images/WhatsApp%20Image%202024-01-22%20at%2016.45%202%20(1).png" title="personalImage" alt="Admin Image">
     <br>
     <h3>Amodh Weerasinghe</h3>
 </section>
 
 <!--blog section-->
-<section>
+<section id="blog">
+    <div>
     <img src="images/secondPageImage.jpg" title="MyImage" alt="Image" width="130">
     <h2>Hellow there !</h2>
     <p>I'm Amodh Nanditha,
@@ -48,87 +155,86 @@
         world of software development began 1 year ago , and since then,
         I've been on an exhilarating quest for knowledge
         , innovation, and hands-on experience.</p>
+    </div>
 </section>
 
-<!--education section-->
-<section>
-    <h3>Education History</h3>
-    <h3>Education History</h3>
-    <h4>K / Pothuwila Navodya Vidyalaya <br> Prince Of Wales College <br> Intitute of Software Engineering</h4>
-    <img src="images/educationBackground.jpg" title="Image" alt="backgroundImage" width="150">
-    <br>
-    <img src="icons/pmv.jpg" title="Image" alt="backgroundImage" width="80">
-    <img src="icons/pwc.png" title="Image" alt="backgroundImage" width="80">
-    <img src="icons/ijse.png" title="Image" alt="backgroundImage" width="80">
-    <br><br>
-    <input type="button" value="View more">
-    <br><br>
-</section>
+<!--&lt;!&ndash;education section&ndash;&gt;-->
+<!--<section>-->
+<!--    <h3>Education History</h3>-->
+<!--    <h3>Education History</h3>-->
+<!--    <h4>K / Pothuwila Navodya Vidyalaya <br> Prince Of Wales College <br> Intitute of Software Engineering</h4>-->
+<!--    <img src="images/educationBackground.jpg" title="Image" alt="backgroundImage" width="150">-->
+<!--    <br>-->
+<!--    <img src="icons/pmv.jpg" title="Image" alt="backgroundImage" width="80">-->
+<!--    <img src="icons/pwc.png" title="Image" alt="backgroundImage" width="80">-->
+<!--    <img src="icons/ijse.png" title="Image" alt="backgroundImage" width="80">-->
+<!--    <br><br>-->
+<!--    <input type="button" value="View more">-->
+<!--    <br><br>-->
+<!--</section>-->
 
-<!--skills and abilities section-->
-<section>
-    <h3>Skills / Abilities</h3>
-    <img src="skills/java.png" title="JavaIcon" alt="java" width="80">
-    <img src="skills/mysql.png" title="Mysql" alt="mysql" width="80">
-    <img src="skills/javafx.png" title="javafx" alt="Javafx" width="80">
-    <img src="skills/css.png" title="css" alt="css" width="80">
-    <img src="skills/js.png" title="js" alt="js" width="80">
-    <img src="skills/html.png" title="html" alt="html" width="140">
-    <img src="skills/github.png" title="github" alt="github" width="80">
-</section>
+<!--&lt;!&ndash;skills and abilities section&ndash;&gt;-->
+<!--<section>-->
+<!--    <h3>Skills / Abilities</h3>-->
+<!--    <img src="skills/java.png" title="JavaIcon" alt="java" width="80">-->
+<!--    <img src="skills/mysql.png" title="Mysql" alt="mysql" width="80">-->
+<!--    <img src="skills/javafx.png" title="javafx" alt="Javafx" width="80">-->
+<!--    <img src="skills/css.png" title="css" alt="css" width="80">-->
+<!--    <img src="skills/js.png" title="js" alt="js" width="80">-->
+<!--    <img src="skills/html.png" title="html" alt="html" width="140">-->
+<!--    <img src="skills/github.png" title="github" alt="github" width="80">-->
+<!--</section>-->
 
-<!--download resume section-->
-<section>
-    <input type="button" value="Download Resume">
-    <input type="button" value="Visit Github">
-    <input type="button" value="Linkedin">
-    <br>
-    <img src="images/resumebackground.jpg" title="background" alt="Blackbackgroundimg" height="200" width="1200">
-    <br>
-</section>
+<!--&lt;!&ndash;download resume section&ndash;&gt;-->
+<!--<section>-->
+<!--    <input type="button" value="Download Resume">-->
+<!--    <input type="button" value="Visit Github">-->
+<!--    <input type="button" value="Linkedin">-->
+<!--    <br>-->
+<!--    <img src="images/resumebackground.jpg" title="background" alt="Blackbackgroundimg" height="200" width="1200">-->
+<!--    <br>-->
+<!--</section>-->
 
-<!--projects section-->
-<section>
-    <h3>Projects</h3>
-    <img src="projects/final.png " title="finalProject" alt="final" width="250">
-    <br>
-    <input type="button" value="View more">
-    <br><br>
-</section>
+<!--&lt;!&ndash;projects section&ndash;&gt;-->
+<!--<section>-->
+<!--    <h3>Projects</h3>-->
+<!--    <img src="projects/final.png " title="finalProject" alt="final" width="250">-->
+<!--    <br>-->
+<!--    <input type="button" value="View more">-->
+<!--    <br><br>-->
+<!--</section>-->
 
-<!--Assignment section-->
-<section>
-    <h3>Assignment</h3>
-    <img src="projects/final.png" title="Assignments" alt="Assignments" width="250">
-    <br>
-    <input type="button" value="View more">
-</section>
+<!--&lt;!&ndash;Assignment section&ndash;&gt;-->
+<!--<section>-->
+<!--    <h3>Assignment</h3>-->
+<!--    <img src="projects/final.png" title="Assignments" alt="Assignments" width="250">-->
+<!--    <br>-->
+<!--    <input type="button" value="View more">-->
+<!--</section>-->
 
-<!--gallery pages-->
-<section>
-    <h3>Gallery Pages</h3>
-    <img src="images/mainImage.jpg" title="myImage" alt="MyImage" width="300">
-    <br><br>
-</section>
-
-<!--find me section-->
-<footer>
-    <img src="images/footerImage.jpg" title="FooterBackgrount" alt="backgroundImg" height="200" width="1450">
-    <img src="images/footerAdminImage.jpg" title="Admin.img" alt="footerAdminImg" width="250">
-    <dev>
-        <h2>Contact Me: </h2>
-        <h5>Amodh Weerasinghe</h5>
-        <h5>amxdhnanditha@gmail.com</h5>
-        <h5>Kaluthara , Sri Lanka</h5>
-        <h5>+94789173934</h5>
-    </dev>
-    <dev>
-        <a href=""><img src="icons/footerFB.png" title="fbIcon" alt="fbIcon" width="55" ></a>
-        <a href=""><img src="icons/footerInster.png" title="fbIcon" alt="fbIcon" width="55"></a>
-        <a href=""><img src="icons/footerLinkdinn.png" title="fbIcon" alt="fbIcon" width="55"></a>
-    </dev>
-</footer>
-
+<!--&lt;!&ndash;gallery pages&ndash;&gt;-->
+<!--<section>-->
+<!--    <h3>Gallery Pages</h3>-->
+<!--    <img src="images/mainImage.jpg" title="myImage" alt="MyImage" width="300">-->
+<!--    <br><br>-->
+<!--</section>-->
+<!--&lt;!&ndash;find me section&ndash;&gt;-->
+<!--<footer>-->
+<!--    <img src="images/footerImage.jpg" title="FooterBackgrount" alt="backgroundImg" height="200" width="1450">-->
+<!--    <img src="images/footerAdminImage.jpg" title="Admin.img" alt="footerAdminImg" width="250">-->
+<!--    <dev>-->
+<!--        <h2>Contact Me: </h2>-->
+<!--        <h5>Amodh Weerasinghe</h5>-->
+<!--        <h5>amxdhnanditha@gmail.com</h5>-->
+<!--        <h5>Kaluthara , Sri Lanka</h5>-->
+<!--        <h5>+94789173934</h5>-->
+<!--    </dev>-->
+<!--    <dev>-->
+<!--        <a href=""><img src="icons/footerFB.png" title="fbIcon" alt="fbIcon" width="55"></a>-->
+<!--        <a href=""><img src="icons/footerInster.png" title="fbIcon" alt="fbIcon" width="55"></a>-->
+<!--        <a href=""><img src="icons/footerLinkdinn.png" title="fbIcon" alt="fbIcon" width="55"></a>-->
+<!--    </dev>-->
+<!--</footer>-->
 
 
 </body>
