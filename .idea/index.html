@@ -6,19 +6,20 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/fontawesome-free-6.5.1-web/css/all.min.css">
     <style>
-        body{
-            background-color:   blueviolet;
+        body {
         }
-        header{
+
+        header {
             position: fixed;
-            background-image: linear-gradient(dimgray,darkgray);
+            background-image: linear-gradient(rgba(1, 15, 37, 1), rgba(0, 25, 64, 1));
             width: 100%;
             height: 40px;
             border-radius: 0px 0px 10px 10px;
             box-sizing: border-box;
             z-index: 1000;
         }
-        header>nav{
+
+        header > nav {
             position: relative;
             width: fit-content;
             left: 60vw;
@@ -26,76 +27,127 @@
             font-size: 16px;
             font-family: "Candara Light";
         }
-        header>nav>ul{
+
+        header > nav > ul {
             margin: 0;
         }
-        header>nav>ul>li{
+
+        header > nav > ul > li {
             display: inline-block;
             color: white;
         }
-        header>nav>ul>li>a{
+
+        header > nav > ul > li > a {
             color: white;
             margin: 10px;
             padding-top: 7px;
             text-decoration: none;
         }
-        header>nav>ul>li>a:hover{
-            border-top: 5px solid black;
+
+        header > nav > ul > li > a:hover {
+            border-top: 7px solid rgba(3, 39, 95, 1);
         }
-        #logoSec{
+
+        #logoSec {
             position: absolute;
-            right: 2vw;
-            top: 8vh;
+            left: 11px;
+            top: 41px;
         }
-        #homeLeft{
+
+        #homeLeft {
             position: absolute;
             top: 207px;
             left: 90px;
-        }
-        #homeLeft>h1{
-            font-weight: bolder;
-            font-family: ui-monospace;
-            font-size: 72px;
-            letter-spacing: 5px;
             color: white;
         }
-        #homeLeft>h3{
-            position: absolute;
-            font-family: ui-monospace;
-            font-size: 30px;
-            letter-spacing: 2px;
-            color: darkgray;
-        }
-        #homeRight{
-            position: absolute;
-            top: 108px;
-            right: 155px;
-        }
-        #homeRight>img{
-            border-radius: 100%;
-            width: 511px;
-            height: 511px;
-        }
-        #homeRight>h3{
+
+        #homeLeft > h3 {
             font-family: monospace;
-            font-size: 40px;
             position: absolute;
-            right: 47px;
-            margin: auto;
-            bottom: -64px;
-            color: white;
-            letter-spacing: 2px;
+            top: 0;
+            left: 0;
+            font-size: 22px;
+            margin-bottom: 0;
         }
-        #blog{
+
+        #homeLeft > h1 {
+            font-family: Georgia;
+            position: absolute;
+            font-size: 51px;
+            margin-bottom: 0;
+            margin-top: 0;
+            top: 66px;
+            left: 0;
+        }
+
+        #homeLeft > h5 {
+            position: relative;
+            top: 101px;
+            left: 60px;
+            font-family: monospace;
+            font-size: 21px;
+            margin-right: 803px;
+            line-height: 36px;
+        }
+
+        #homelftline {
+            background-color: rgba(91, 86, 86, 1);
+            width: 118px;
+            height: 2px;
+            position: absolute;
+            top: 410px;
+            left: 3px;
+        }
+
+        #homeLeft > div:last-child {
+            background-color: white;
+            width: 40px;
+            height: 3px;
+            position: absolute;
+            top: 171px;
+            left: 0;
+        }
+
+        #homeLeft > h4 {
+            position: absolute;
+            color: rgba(91, 86, 86, 1);
+            font-family: Calibri;
+            font-size: 15px;
+            top: 369px;
+            left: 3px;
+        }
+
+        #homeRight {
+            position: absolute;
+            top: 132px;
+            right: 232px;
+        }
+
+        #div {
+            width: 393px;
+            height: 460px;
+            background-color: black;
+            border: 3px solid gray;
+            position: absolute;
+            top: 159px;
+            right: 206px;
+        }
+
+        #homeRight > img {
+            width: 393px;
+        }
+
+        #blog {
             position: absolute;
             top: 100vh;
             width: 100%;
             height: 100vh;
-            background-color: red;
+            background-image: linear-gradient(rgba(1, 15, 37, 1), black);
         }
-        #blog>div{
+
+        #blog > div {
             position: absolute;
-            width: 90vw;
+            width: 85vw;
             height: 90vh;
             background-color: white;
             top: 0;
@@ -104,6 +156,181 @@
             left: 0;
             margin: auto;
             border-radius: 25px;
+        }
+
+        #blog > div > h2 {
+            position: absolute;
+            font-family: monospace;
+            font-size: 44px;
+            right: 430px;
+            top: 86px;
+        }
+
+        #blog > div > img {
+            position: absolute;
+            left: 124px;
+            top: 63px;
+            width: 170px;
+        }
+
+        #blog > div > p {
+            position: absolute;
+            font-family: monospace;
+            font-size: 25px;
+            top: 277px;
+            margin-left: 191px;
+            margin-right: 209px;
+            line-height: 45px;
+            font-weight: bold;
+        }
+
+        #education {
+            position: absolute;
+            top: 200vh;
+            width: 100%;
+            height: 100vh;
+            background-image: linear-gradient(rgba(1, 15, 37, 1), black);
+        }
+
+        #mainbackground {
+            height: 100vh;
+            width: 100%;
+            background-image: url("images/Rectangle 22.png");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+
+        }
+
+        #socailLinks {
+            position: absolute;
+            top: 172px;
+            right: -17px;
+        }
+
+        #socailLinks > a:first-child {
+            position: absolute;
+            top: 209px;
+            right: 116px;
+        }
+
+        #socailLinks > a:nth-child(2) {
+            position: absolute;
+            top: 153px;
+            right: 115px;
+        }
+
+        #socailLinks > a:last-child {
+            position: absolute;
+            top: 95px;
+            right: 116px;
+        }
+        #watermarksHome{
+            position: absolute;
+            color: darkgray;
+            top: 190px;
+            left: 129px;
+            font-size: 45px;
+            opacity: 4%;
+        }
+        #watermarksHome>h1{
+            margin-bottom: 0;
+            margin-top: 0;
+        }
+        #education>h3{
+            position: absolute;
+            font-family: cursive;
+            font-size: 25px;
+            font-weight: bold;
+            top: 65px;
+            left: 102px;
+            color: white;
+        }
+        #pmv{
+            position: absolute;
+            top: 205px;
+            left: 105px;
+            font-family: serif;
+            font-size: 33px;
+            color: white;
+        }
+        #pwc{
+            position: absolute;
+            top: 277px;
+            left: 105px;
+            font-family: serif;
+            font-size: 33px;
+            color: white;
+        }
+        #ijse{
+            position: absolute;
+            top: 350px;
+            left: 105px;
+            font-family: serif;
+            font-size: 33px;
+            color: white;
+        }
+        #education>input{
+            position: absolute;
+            top: 529px;
+            left: 101px;
+            background-color: rgba(0, 178, 255, 1);
+            font-weight: lighter;
+            border-radius: 10px;
+            border: 1px solid rgba(0, 178, 255, 1);
+            color: white;
+            font-size: 12px;
+            width: 82px;
+            height: 23px;
+        }
+        #backimg{
+            border-radius: 26px;
+            position: absolute;
+            top: 456px;
+            right: 457px;
+            width: 244px;
+        }
+        #pmvi{
+            top: 57px;
+            position: absolute;
+            right: 43px;
+        }
+        #pwci{
+            top: 144px;
+            right: 162px;
+            position: absolute;
+        }
+        #ijsei{
+            position: absolute;
+            top: 259px;
+            left: 30px;
+        }
+        #education>div{
+            width: 402px;
+            aspect-ratio: 1/1;
+            border-radius: 100%;
+            background-color: rgba(0, 80, 106, 1);
+            border: 5px solid rgba(0, 178, 255, 1);
+            position: absolute;
+            top: 156px;
+            right: 189px;
+        }
+        main>div{
+            width: 13px;
+            aspect-ratio: 1/1;
+            background-color: rgba(0, 178, 255, 1);
+            border-radius: 100%;
+            position: absolute;
+            top: 98px;
+            left: 71px;
+        }
+        main>nav>div{
+            width: 79px;
+            height: 2px;
+            background-color: rgba(0, 178, 255, 1);
+            position: absolute;
+            top: 489px;
+            left: 104px;
         }
     </style>
 </head>
@@ -124,54 +351,76 @@
 
 <!--logo section-->
 <section id="logoSec">
-    <img src="icons/Speed_Dial_-_Opera_2_1_2024_9_46_50_PM-removebg-preview%202%20(1).png" title="logo" alt="logo" width="120">
+    <img src="icons/Speed_Dial_-_Opera_2_1_2024_9_46_50_PM-removebg-preview%202%20(1).png" title="logo" alt="logo"
+         width="120">
 </section>
 
-<!--home page left section-->
-<section id="homeLeft">
-    <h1>I`m a Software <br> Developer</h1>
+<div id="mainbackground">
+    <!--home page left section-->
+    <section id="homeLeft">
+        <h3>Hellow , it`s me</h3>
+        <h1>Amodh Weerasinghe</h1>
+        <br>
+        <h5>Software developer, with knowledge in web development and design, i offer the best projects resulting in
+            quality work.</h5>
+        <div id="homelftline"></div>
+        <h4>SCROLL FOR MORE</h4>
+        <div></div>
+    </section>
 
-    <h3>Follow for Updates</h3><br>
-    <a href=""><img src="icons/linkdinhome.png" title="LinkdinIcon" alt="Lindin" width="30"></a>
-    <a href=""><img src="icons/mailbox.png" title="LinkdinIcon" alt="Lindin" width="30"></a>
-    <a href=""><img src="icons/insterhome.png" title="LinkdinIcon" alt="Lindin" width="30"></a>
-</section>
 
-<!--home page right section-->
-<section id="homeRight">
-    <img src="images/WhatsApp%20Image%202024-01-22%20at%2016.45%202%20(1).png" title="personalImage" alt="Admin Image">
-    <br>
-    <h3>Amodh Weerasinghe</h3>
-</section>
-
+    <div id="socailLinks">
+        <a href=""><i class="fa-brands fa-linkedin fa-2x" style="color: #ffffff;"></i></a>
+        <a href=""><i class="fa-regular fa-envelope fa-2x" style="color: #ffffff;"></i></a>
+        <a href=""><i class="fa-brands fa-instagram fa-2x" style="color: #ffffff;"></i></a>
+    </div>
+    <div id="div"></div>
+    <div id="watermarksHome">
+        <h1>Software</h1>
+        <h1>Developer</h1>
+    </div>
+    <!--home page right section-->
+    <section id="homeRight">
+        <img src="images/mainPersonal.png" title="personalImage" alt="Admin Image">
+    </section>
+</div>
 <!--blog section-->
 <section id="blog">
     <div>
-    <img src="images/secondPageImage.jpg" title="MyImage" alt="Image" width="130">
-    <h2>Hellow there !</h2>
-    <p>I'm Amodh Nanditha,
-        a dedicated software student with a passion for crafting code and
-        solving complex problems in the digital realm. My journey into the
-        world of software development began 1 year ago , and since then,
-        I've been on an exhilarating quest for knowledge
-        , innovation, and hands-on experience.</p>
+        <img src="images/blogmain.png" title="MyImage" alt="Image" width="130">
+        <h2>Hellow there !</h2>
+        <p>I'm Amodh Nanditha,
+            a dedicated software student with a passion for crafting code and
+            solving complex problems in the digital realm. My journey into the
+            world of software development began 1 year ago , and since then,
+            I've been on an exhilarating quest for knowledge
+            , innovation, and hands-on experience.</p>
     </div>
 </section>
 
-<!--&lt;!&ndash;education section&ndash;&gt;-->
-<!--<section>-->
-<!--    <h3>Education History</h3>-->
-<!--    <h3>Education History</h3>-->
-<!--    <h4>K / Pothuwila Navodya Vidyalaya <br> Prince Of Wales College <br> Intitute of Software Engineering</h4>-->
-<!--    <img src="images/educationBackground.jpg" title="Image" alt="backgroundImage" width="150">-->
-<!--    <br>-->
-<!--    <img src="icons/pmv.jpg" title="Image" alt="backgroundImage" width="80">-->
-<!--    <img src="icons/pwc.png" title="Image" alt="backgroundImage" width="80">-->
-<!--    <img src="icons/ijse.png" title="Image" alt="backgroundImage" width="80">-->
-<!--    <br><br>-->
-<!--    <input type="button" value="View more">-->
-<!--    <br><br>-->
-<!--</section>-->
+<!--education section-->
+<section id="education">
+
+    <img id="backimg" src="images/educationBackground.jpg" title="Image" alt="backgroundImage" width="150">
+
+    <div>
+        <img id="pmvi" src="icons/removedpmv.png" title="Image" alt="backgroundImage" width="80">
+        <img id="pwci" src="icons/removedpwc.png" title="Image" alt="backgroundImage" width="80">
+        <img id="ijsei" src="icons/removedijse.png" title="Image" alt="backgroundImage" width="80">
+    </div>
+    <main>
+        <div></div>
+        <nav>
+            <div></div>
+        </nav>
+    </main>
+    <h3>Education History</h3>
+    <h4 id="pmv">K / Pothuwila Navodya Vidyalaya</h4>
+    <h4 id="pwc">Prince Of Wales College</h4>
+    <h4 id="ijse">Intitute of Software Engineering</h4>
+
+    <input type="button" value="View more">
+</section>
 
 <!--&lt;!&ndash;skills and abilities section&ndash;&gt;-->
 <!--<section>-->
